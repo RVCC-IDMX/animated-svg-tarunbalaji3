@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+#clouds {
+    animation: cloud 5s ease-in-out;
+
+}
+
+#man-scooter {
+    animation: move 5s ease-in-out;
+}
+
+#leg {
+    animation: kick 3s ease-in;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes cloud {
+    from {
+        transform: translateX(0px);
+
+    }
+    to {
+        transform: translateX(-120px);
+    }
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0px);
+
+    }
+    to {
+        transform: translateX(400px);
+    }
+}
+
+@keyframes kick {
+    from {
+        transform: rotate(0deg);
+
+    }
+    to {
+        transform: rotate(7deg);
+    }
+}
